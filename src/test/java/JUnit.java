@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class JUnit {
     String SITE_URL = "https://yandex.ru/";
     static WebDriver driver;
@@ -22,6 +23,7 @@ public class JUnit {
     }
 
     //карта мап купить
+
     @ParameterizedTest
     @ValueSource(strings = {"карта мап купить", "карта мап купить спб","карточка мап купить","карточка мап купить спб"})
     public void firstTest(String text) throws InterruptedException {
@@ -36,7 +38,7 @@ public class JUnit {
 
         WebElement ttcsite = driver.findElement(By.partialLinkText("ttc.com.ru"));
         ttcsite.click();
-        Thread.sleep(2000);
+        Thread.sleep(15000);
         driver.quit();
     }
 }
