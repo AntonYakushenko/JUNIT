@@ -25,7 +25,7 @@ public class JUnit {
     //карта мап купить
 
     @ParameterizedTest
-    @ValueSource(strings = {"карта мап купить", "карта мап купить спб","карточка мап купить","карточка мап купить спб"})
+    @ValueSource(strings = {"карта мап купить", "карта мап купить спб","карточка мап купить","карточка мап купить спб","карта допуска к международным перевозкам купить"})
     public void firstTest(String text) throws InterruptedException {
         driver.get(SITE_URL);
 
