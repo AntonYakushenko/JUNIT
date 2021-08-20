@@ -17,9 +17,11 @@ public class JUnit {
         driver = new ChromeDriver();
         //отодвигает контекст просмотра Chrome на задний план.
 
-        Point p = driver.manage().window().getPosition();
+        //Закомментил т.к. не выводится стата
+        /*Point p = driver.manage().window().getPosition();
         Dimension d = driver.manage().window().getSize();
-        driver.manage().window().setPosition(new Point((d.getHeight()-p.getX()), (d.getWidth()-p.getY())));
+        driver.manage().window().setPosition(new Point((d.getHeight()-p.getX()), (d.getWidth()-p.getY())));*/
+        
     }
 
     //карта мап купить
