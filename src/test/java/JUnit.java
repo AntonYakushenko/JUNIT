@@ -39,6 +39,5 @@ public class JUnit {
         WebElement ttcsite = driver.findElement(By.partialLinkText("ttc.com.ru"));
         ttcsite.click();
         Thread.sleep(10000);
-        driver.quit();
     }
 }
